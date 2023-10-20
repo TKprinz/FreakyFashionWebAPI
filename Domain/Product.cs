@@ -1,11 +1,13 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace FreakyFashionWebAPI.Domain;
 
 
 
 
+[Index(nameof(StockKeepingUnit), IsUnique = true)]
 
 public class Product
 

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreakyFashionWebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:FreakyFashionWebAPI.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:FreakyFashionWebAPI.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FreakyFashionWebAPI.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FreakyFashionWebAPI.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FreakyFashionWebAPI.Migrations.AddUser">
+            <inheritdoc />
+        </member>
+        <member name="M:FreakyFashionWebAPI.Migrations.AddUser.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FreakyFashionWebAPI.Migrations.AddUser.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FreakyFashionWebAPI.Migrations.AddUser.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductsController.GetProducts">
+            <summary>
+            Hämta alla produkter
+            </summary>
+            <param name="title">Title att filtrera på</param>
+            <returns>Produkter</returns>
+        </member>
+        <member name="M:ProductsController.GetProduct(System.Int32)">
+            <summary>
+            Hämta produkt
+            </summary>
+            <param name="id">ID på produkt</param>
+            <returns>Produkt</returns>
+        </member>
+        <member name="M:ProductsController.CreateProduct(CreateProductRequest)">
+            <summary>
+            Lägg till produkt
+            </summary>
+            <param name="createProductRequest">Information om produkten</param>
+            <returns>Skapad produkt</returns>
+        </member>
+        <member name="M:ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            Raderar produkt
+            </summary>
+            <param name="id">ID för produkt</param>
+        </member>
+        <member name="T:CreateProductRequest">
+            <summary>
+            Information om ny produkt
+            </summary>
+        </member>
+    </members>
+</doc>

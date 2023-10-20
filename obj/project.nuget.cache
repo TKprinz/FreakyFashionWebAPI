@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "s0ZDUKxUijv3DFswP1tk5DQTfNPATOBcpdOahRf3VnvheMTPop2Awnrsote8wczudoSGy/q0FlKL4tC6n9KQWw==",
+  "dgSpecHash": "nF4C0uXNmEqE5zKOQFBKMb/NMPrFqP2odt0tjopQVWFYyZEd7cdrmHr357TaYmZjhdcrWqsbdiqXd1fnTxq2hg==",
   "success": true,
   "projectFilePath": "C:\\Users\\kolob\\OneDrive\\Skrivbord\\Workspace\\Projekt_ProductManager_Backend2_WebAPI\\FreakyFashionWebAPI\\FreakyFashionWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kolob\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\kolob\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\kolob\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\kolob\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.12\\microsoft.aspnetcore.authentication.jwtbearer.7.0.12.nupkg.sha512",
     "C:\\Users\\kolob\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
     "C:\\Users\\kolob\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\kolob\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
