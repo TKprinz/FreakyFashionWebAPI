@@ -46,15 +46,15 @@ public class ProductsController : ControllerBase
     /// <summary>
     /// Hämta produkt
     /// </summary>
-    /// <param name="id">ID på produkt</param>
+    /// <param name="stockKeepingUnit">SKU på produkt</param>
     /// <returns>Produkt</returns>
-    [HttpGet("{id}")]
+    [HttpGet("{stockKeepingUnit}")]
     [Produces("application/json")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public ActionResult<ProductDto> GetProduct(int id)
+    public ActionResult<ProductDto> GetProduct(string stockKeepingUnit)
     {
-        var product = context.Products.FirstOrDefault(x => x.Id == id);
+        var product = context.Products.FirstOrDefault(x => x.StockKeepingUnit == stockKeepingUnit);
 
         if (product == null)
             return NotFound(); // 404 Not Found

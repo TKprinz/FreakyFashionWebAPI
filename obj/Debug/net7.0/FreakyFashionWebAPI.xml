@@ -35,11 +35,11 @@
             <param name="title">Title att filtrera på</param>
             <returns>Produkter</returns>
         </member>
-        <member name="M:ProductsController.GetProduct(System.Int32)">
+        <member name="M:ProductsController.GetProduct(System.String)">
             <summary>
             Hämta produkt
             </summary>
-            <param name="id">ID på produkt</param>
+            <param name="stockKeepingUnit">ID på produkt</param>
             <returns>Produkt</returns>
         </member>
         <member name="M:ProductsController.CreateProduct(CreateProductRequest)">
