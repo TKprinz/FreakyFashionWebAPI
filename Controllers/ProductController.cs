@@ -25,6 +25,8 @@ public class ProductsController : ControllerBase
     /// <returns>Produkter</returns>
     [HttpGet]
     [Produces("application/json")]
+    [ProducesResponseType(StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public IEnumerable<ProductDto> GetProducts()
     {
         var products = context.Products.ToList();
