@@ -39,7 +39,7 @@
             <summary>
             Hämta produkt
             </summary>
-            <param name="stockKeepingUnit">ID på produkt</param>
+            <param name="stockKeepingUnit">SKU på produkt</param>
             <returns>Produkt</returns>
         </member>
         <member name="M:ProductsController.CreateProduct(CreateProductRequest)">
