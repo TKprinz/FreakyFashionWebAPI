@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Authorization;
-
 using Microsoft.AspNetCore.Mvc;
 using FreakyFashionWebAPI.Data;
 using FreakyFashionWebAPI.Domain;
@@ -86,8 +85,16 @@ public class ProductsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public ActionResult CreateProduct(CreateProductRequest request)
     {
-        // CreateProductRequest is a DTO = Data Transfer Object
+        // Kontrollera om produkten redan finns med samma SKU
+        var existingProduct = context.Products.FirstOrDefault(p => p.StockKeepingUnit == request.StockKeepingUnit);
 
+        if (existingProduct != null)
+        {
+            // Produkten med samma SKU finns redan i databasen, du kan hantera detta på ett lämpligt sätt, till exempel ge ett meddelande.
+            return BadRequest("Produkten med samma SKU finns redan.");
+        }
+
+        // Produkten finns inte, skapa och lägg till den i databasen
         var product = new Product
         {
             ProductName = request.ProductName,
@@ -111,6 +118,7 @@ public class ProductsController : ControllerBase
 
         return Created("", productDto); // 201 Created
     }
+
 
 
     // DELETE /products/{id}
